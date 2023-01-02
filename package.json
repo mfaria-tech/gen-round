@@ -1,0 +1,33 @@
+{
+  "name": "gen_round",
+  "version": "0.1.0",
+  "description": "Gerenciador para nivelamento e organização de projetos",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "commit": "cz"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Marcus Faria",
+    "email": "mfaria150.github@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

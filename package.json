@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Gerenciador para nivelamento e organização de projetos",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "commit": "cz"
@@ -18,12 +18,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "next": "^13.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "3.3.0"
   },
   "config": {
     "commitizen": {

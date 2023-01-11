@@ -1,4 +1,7 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, NextScript } from 'next/document'
+import Header from '../src/components/DefaultHeader'
+import SideBar from '../src/components/SideBar'
+import WorkSpace from '../src/components/WorkSpace'
 
 export default function Document() {
   return (
@@ -11,7 +14,9 @@ export default function Document() {
         <link rel='icon' href='/img/favicon.ico' />
       </Head>
       <body>
-        <Main />
+        <Header />
+        <SideBar />
+        <WorkSpace />
         <NextScript />
       </body>
     </Html>

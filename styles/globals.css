@@ -7,9 +7,106 @@
   --font-secondary: ;
   --font-tertiary: ; */
 
+  --space-size-none: 0px;
+  --space-size-xs: 6px;
+  --space-size-s: 9px;
+  --space-size-m: 12px;
+  --space-size-l: 15px;
+  --space-size-xl: 18px;
+
+  --font-size-xs: 9px;
+  --font-size-s: 12px;
+  --font-size-m: 18px;
+  --font-size-l: 21px;
+  --font-size-xl: 27px;
+  --font-size-logo: 30px;
+
   --border-size-xs: 1px;
   --border-size-s: 2px;
   --border-size-m: 3px;
   --border-size-l: 4px;
   --border-size-xl: 5px;
+
+  --border-radius-soft1: 9px;
+  --border-radius-soft2: 12px;
+  --border-radius-soft3: 24px;
+  --border-radius-rounded: 100px;
+  --border-radius-circle: 100%;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ===================================== */
+/* Header styles                         */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 56px;
+  padding: var(--space-size-m);
+  background: rgb(34, 47, 65);
+}
+
+header span,
+header p {
+  font-size: var(--font-size-logo);
+  color: rgb(255, 255, 255);
+}
+
+header .content__logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 256px;
+}
+
+/* ===================================== */
+/* SideBar styles                        */
+div[data-sidebar] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background: rgb(126, 168, 187);
+  height: calc(100vh - 80px);
+  width: 56px;
+  padding: var(--space-size-m);
+}
+
+div[data-sidebar] ul {
+  list-style: none;
+  padding: var(--space-size-none);
+}
+
+div[data-sidebar] li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background: rgb(209, 229, 238);
+  border-radius: var(--border-radius-circle);
+  margin: var(--space-size-m) 0;
+  text-align: center;
+}
+
+div[data-sidebar] li:hover {
+  background: rgb(188, 214, 226);
+}
+
+/* ===================================== */
+/* Main styles                           */
+main {
+  position: fixed;
+  top: 80px;
+  left: 80px;
+  width: calc(100vw - 80px);
+  height: calc(100vh - 80px);
+  padding: var(--space-size-l);
+  overflow-y: scroll;
 }

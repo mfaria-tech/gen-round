@@ -134,5 +134,6 @@ __tests__/
 
 # Other files automatically generated
 package-lock.json
+yarn.lock
 .editorconfig
 .eslint*

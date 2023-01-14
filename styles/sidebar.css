@@ -1,0 +1,41 @@
+/* ===================================== */
+/* SideBar styles                        */
+div[data-sidebar] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background: rgb(126, 168, 187);
+  height: calc(100vh - 80px);
+  width: 56px;
+  padding: var(--space-size-m);
+}
+
+div[data-sidebar] ul {
+  list-style: none;
+  padding: var(--space-size-none);
+}
+
+div[data-sidebar] li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background: rgb(209, 229, 238);
+  border-radius: var(--border-radius-circle);
+  margin: var(--space-size-m) 0;
+  text-align: center;
+}
+
+div[data-sidebar] li:hover {
+  background: rgb(188, 214, 226);
+}
+
+/* ===================================== */
+/* svg-icons styles                      */
+div[data-sidebar] svg[data-icon] {
+  height: 33px;
+}

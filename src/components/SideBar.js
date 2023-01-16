@@ -7,24 +7,29 @@ export default function SideBar(props) {
     <div data-sidebar {...props}>
       <ul>
         <li>
-          <Icon icon="ChartLine" />
+          <Icon icon="ChartLine" title="dashboard" />
         </li>
         <li>
-          <Icon icon="FeatherPointed" />
+          <Icon icon="FeatherPointed" title="write" />
         </li>
         <li>
-          <Icon icon="Bookmark" />
+          <Icon icon="Bookmark" title="favorite" />
         </li>
       </ul>
     </div>
   );
 }
 
-function Icon({ icon, ...props }) {
+function Icon({ icon, title, ...props }) {
   return (
-    <FontAwesomeIcon 
-      icon={iconSet[`fa${icon}`]}
-      {...props}
-    />
+    <>
+      <div data-icon>
+        <FontAwesomeIcon 
+          icon={iconSet[`fa${icon}`]}
+          {...props}
+        />
+      </div>
+      <span>{title}</span>
+    </>
   )
 }

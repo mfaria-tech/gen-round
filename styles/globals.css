@@ -1,11 +1,8 @@
 :root {
+  /* default variables */
   --color-primary: rgba(75, 98, 133, 1);
   --color-pri-compl-light: rgba(193, 218, 255, 1);
   --color-pri-compl-dark: rgba(16, 22, 31, 1);
-
-  --color-secondary: ;
-  --color-sec-compl-light: ;
-  --color-sec-compl-dark: ;
 
   --space-size-none: 0px;
   --space-size-xs: 6px;
